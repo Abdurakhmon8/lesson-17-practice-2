@@ -1,0 +1,116 @@
+body {
+    background-color: #021823;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-1{
+    display: flex;
+    justify-content: center;
+    animation-name: words-1;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+.card-2{
+    display: flex;
+    justify-content: center;
+    animation-name: words-2;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+.NT-logo{
+    width: 200px;
+    height: 150px;
+    animation-name: nt-logo;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+
+.h1-1{
+    color: white;
+    animation-name: word-fall;
+    animation-delay: 1.5s;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+.h1-2{
+    color: white;
+    animation-name: word-fall;
+    animation-delay: 1.7s;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+.h1-3{
+    color: white;
+    animation-name: word-fall;
+    animation-delay: 1.9s;
+    animation-duration: 1.1s;
+    animation-fill-mode: forwards;
+}
+.h1-4{
+    color: white;
+    animation-name: word-fall;
+    animation-delay: 2.1s;
+    animation-duration: 1.1s;
+    animation-fill-mode: forwards;
+}
+.h1-5{
+    color: white;
+    animation-name: word-fall;
+    animation-delay: 2.3s;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nt-logo{
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes words-1{
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100px);
+    }
+}
+@keyframes words-2{
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+
+@keyframes word-fall{
+    100%{
+        transform: translateY(50px);
+    }
+}
